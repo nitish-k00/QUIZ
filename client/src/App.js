@@ -14,7 +14,7 @@ function App() {
 
   const Quiz_Data = async () => {
     try {
-      const response = await axios.get("/Uw5CrX");
+      const response = await axios.get("https://api.jsonserve.com/Uw5CrX");
 
       console.log(response)
 
