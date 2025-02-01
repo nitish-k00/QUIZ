@@ -66,7 +66,7 @@ function StartPage({ questions, response }) {
               </span>
               <span className="instruction-item">
                 <strong>
-                  Marks for Correct Answer: {response.correct_answer_marks}
+                   Correct Answer: {response.correct_answer_marks}
                 </strong>
               </span>
               <span className="instruction-item">
