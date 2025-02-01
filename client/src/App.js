@@ -16,7 +16,7 @@ function App() {
     try {
       const response = await axios.get("/Uw5CrX");
 
-      cosole.log(response.data)
+      console.log(response.data)
 
       let shuffledQuestions = [...response.data.questions];
       for (let i = shuffledQuestions.length - 1; i > 0; i--) {
