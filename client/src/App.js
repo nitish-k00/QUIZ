@@ -14,7 +14,7 @@ function App() {
 
   const Quiz_Data = async () => {
     try {
-      const response = await axios.get("https://cors-anywhere.herokuapp.com/https://api.jsonserve.com/Uw5CrX");
+      const response = await axios.get("https://quiz-server-4dc4.onrender.com/proxy");
 
       console.log(response)
 
