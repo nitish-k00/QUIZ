@@ -16,6 +16,8 @@ function App() {
     try {
       const response = await axios.get("/Uw5CrX");
 
+      cosole.log(response.data)
+
       let shuffledQuestions = [...response.data.questions];
       for (let i = shuffledQuestions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -32,7 +34,9 @@ function App() {
         title: response.data.title,
         topic: response.data.topic,
       });
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.message)
+    }
   };
 
   useEffect(() => {
