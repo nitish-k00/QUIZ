@@ -16,7 +16,7 @@ function App() {
     try {
       const response = await axios.get("/Uw5CrX");
 
-      console.log(response.data)
+      console.log(response)
 
       let shuffledQuestions = [...response.data.questions];
       for (let i = shuffledQuestions.length - 1; i > 0; i--) {
@@ -35,7 +35,7 @@ function App() {
         topic: response.data.topic,
       });
     } catch (error) {
-      console.log(error.message)
+      console.log(error)
     }
   };
 
